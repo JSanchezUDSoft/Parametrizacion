@@ -88,12 +88,3 @@ function agregarDatosTabla(a,b,c,d,e,f,g,h){
         document.getElementById('tbl1').insertRow(-1).innerHTML = '<th scope="row" class="table-dark">'+ac+'</th><td class="table-dark">'+a+'</td><td class="table-dark">'+b+'</td><td class="table-dark">'+c+'</td><td class="table-dark">'+d+'</td><td class="table-dark">'+e+'</td><td class="table-dark">'+f+'</td><td class="table-dark">'+g+'</td>';
     }
 }
-
-$(document).ready(function(){
-
-    $('#ejecuta').click(function(){
-        alertify.confirm('¿Desea detener la ejecución?', 'Detener', function(){
-            alertify.success('Ok')}, function(){
-            alertify.error('Cancel')});
-    });
-})
